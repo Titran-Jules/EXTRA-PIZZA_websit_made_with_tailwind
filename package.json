@@ -5,15 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx tailwindcss -i ./input.css -o ./style.css --watch",
-    "build": "npx tailwindcss -i ./input.css -o ./style.css --minify"
+    "dev": "npx @tailwindcss/cli -i ./input.css -o ./style.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@tailwindcss/postcss": "^4.2.0",
+    "@tailwindcss/postcss": "^4.2.0"
+  },
+  "devDependencies": {
     "tailwindcss": "^4.2.0"
   }
 }
