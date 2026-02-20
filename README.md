@@ -1,4 +1,4 @@
-# HEI Tailwind v4.1
+# EXTRA-PIZAA Tailwind v4.1
 
 Ce projet utilise HTML5 et Tailwind CSS v4.1.
 
