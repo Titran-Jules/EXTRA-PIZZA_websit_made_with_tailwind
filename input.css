@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+@theme {
+    --background-image-hero1 : url('Images/backgroung-image1 - Copie.jpg');
+}

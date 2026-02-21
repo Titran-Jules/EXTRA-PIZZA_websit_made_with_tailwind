@@ -7,32 +7,45 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body class="p-0 m-0 box-border">
-    <header class="flex items-center justify-evenly">
+    <header class="flex items-center justify-evenly fixed w-screen">
         <div class="flex items-center gap-5">
             <hr class="h-1 w-12 border-0 bg-red-600">
-            <img src="Images/Logo.png" alt="logo_extra_pizza" class="w-16"> 
+            <img src="Images/Logo.png" alt="logo_extra_pizza" class="w-16 rounded-full"> 
             <hr class="h-1 w-12 border-0 bg-blue-600">
         </div>
         <nav>
             <ul class="flex gap-2 items-center">
-                <li class="text-xl text-gray-500 flex flex-col items-center px-5 py-1 bg-gray-200 rounded-2xl hover:text-white">Accueil <hr class="w-1 h-1 border-0 rounded-4xl bg-red-600"></li>
-                <li class="text-xl text-gray-500 flex flex-col items-center px-5 py-1 hover:bg-gray-200 hover:text-white rounded-2xl">À propos <hr class="w-1 h-1 border-0 rounded-4xl bg-red-600"></li>
-                <li class="text-xl text-gray-500 flex flex-col items-center px-5 py-1 hover:bg-gray-200 hover:text-white rounded-2xl">Nos locaux <hr class="w-1 h-1 border-0 rounded-4xl bg-red-600"></li>
-                <li class="text-xl text-gray-500 flex flex-col items-center px-5 py-1 hover:bg-gray-200 hover:text-white rounded-2xl">Menus <hr class="w-1 h-1 border-0 rounded-4xl bg-red-600"></li>
-                <li class="text-xl text-gray-500 flex flex-col items-center px-5 py-1 hover:bg-gray-200 hover:text-white rounded-2xl">Avis <hr class="w-1 h-1 border-0 rounded-4xl bg-red-600"></li>
-                <li class="text-xl text-gray-500 flex flex-col items-center px-5 py-1 hover:bg-gray-200 hover:text-white rounded-2xl">Contact <hr class="w-1 h-1 border-0 rounded-4xl bg-red-600"></li>
+                <li class="text-xl text-gray-100 flex flex-col items-center px-5 py-1 bg-blue-950 rounded-4xl hover:text-white">Accueil <hr class="w-1 h-1 border-0 rounded-4xl bg-red-600"></li>
+                <li class="text-xl text-gray-200 flex flex-col items-center px-5 py-1 hover:bg-blue-950 hover:text-white rounded-4xl">À propos <hr class="w-1 h-1 border-0 rounded-4xl bg-red-600"></li>
+                <li class="text-xl text-gray-200 flex flex-col items-center px-5 py-1 hover:bg-blue-950 hover:text-white rounded-4xl">Nos locaux <hr class="w-1 h-1 border-0 rounded-4xl bg-red-600"></li>
+                <li class="text-xl text-gray-200 flex flex-col items-center px-5 py-1 hover:bg-blue-950 hover:text-white rounded-4xl">Menus <hr class="w-1 h-1 border-0 rounded-4xl bg-red-600"></li>
+                <li class="text-xl text-gray-200 flex flex-col items-center px-5 py-1 hover:bg-blue-950 hover:text-white rounded-4xl">Avis <hr class="w-1 h-1 border-0 rounded-4xl bg-red-600"></li>
+                <li class="text-xl text-gray-200 flex flex-col items-center px-5 py-1 hover:bg-blue-950 hover:text-white rounded-4xl">Contact <hr class="w-1 h-1 border-0 rounded-4xl bg-red-600"></li>
             </ul>
         </nav>
         <div class="flex gap-5 *:text-xl *:px-5 *:py-2 *:rounded-4xl">
-            <a href="" class="border-gray-50 border-2 hover:bg-gray-300">Se connecter</a>
+            <a href="" class="border-gray-50 border-2 hover:bg-gray-600 text-gray-100">Se connecter</a>
             <a href="" class="bg-red-600 text-white">Réserver une table</a>
         </div>
     </header>
 
     <!-- Hero section -->
 
-    <section>
-        <h1><span>EX</span><span>TRA</span><br><span>PIZZA</span></h1>
+    <section class="py-32 px-14 flex flex-col gap-14 bg-hero1 bg-no-repeat bg-cover">
+        <h1 class="text-9xl font-medium"><span class="text-blue-700">EX</span><span class="text-white">TRA</span><br><span class="text-red-600">PIZZA</span></h1>
+        <hr class="h-1 w-32 border-0 bg-linear-to-r from-red-600 to-blue-600">
+        <p class="italic text-2xl font-serif text-gray-100">Leader du french tacos & créateur de la pizza feuilletée</p>
+        <div>
+            <div class="[&_hr]:w-10 [&_hr]:rotate-90 [&_hr]:bg-gray-300 [&_hr]:border-0 [&_hr]:h-0.5 flex items-center gap-4 [&_h3]:text-gray-300">
+                <h3><span class="bg-linear-120 from-red-700 from-30% to-blue-600 bg-clip-text text-transparent text-3xl font-bold">20+</span> <br>ANS D'EXPERIENCE</h3>
+                <hr>
+                <h3><span class="bg-linear-120 from-red-700 from-30% to-blue-600 bg-clip-text text-transparent text-3xl font-bold">8</span> <br>RESTAURANTS</h3>
+                <hr>
+                <h3><span class="bg-linear-120 from-red-700 from-30% to-blue-600 bg-clip-text text-transparent text-3xl font-bold">1K+</span> <br>CLIENTS / JOUR</h3>
+                <hr>
+                <h3><span class="bg-linear-120 from-red-700 from-30% to-blue-600 bg-clip-text text-transparent text-3xl font-bold">50+</span> <br>RECETTES</h3>
+            </div>
+        </div>
     </section>
 </body>
 </html>
