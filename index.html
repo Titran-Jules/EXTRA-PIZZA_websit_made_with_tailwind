@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body class="p-0 m-0 box-border">
-    <header class="flex items-center justify-evenly fixed w-screen z-50">
+    <header class="flex items-center justify-evenly fixed w-screen z-50 bg-[#0B0B2A]/90 backdrop-blur-md py-3 border-b border-white/10 transition-all">
         <div class="flex items-center gap-5">
             <hr class="h-1 w-12 border-0 bg-red-600">
             <img src="Images/Logo.png" alt="logo_extra_pizza" class="w-16 rounded-full"> 
@@ -31,7 +31,7 @@
     </header>
 
     <!-- Hero section -->
-    <section class="relative min-h-screen flex flex-col items-center justify-center overflow-hidden text-white bg-dark-bg hero-bg-custom py-28">
+    <section class="relative min-h-screen flex flex-col items-center justify-center overflow-hidden text-white bg-dark-bg hero-bg-custom animate-bg-hero-change py-28">
     
         <div class="absolute inset-0 z-1 hero-overlay-gradient"></div>
         <div class="absolute -top-[10%] -left-[5%] w-[45%] h-[130%] z-2 pointer-events-none bg-linear-to-br from-brand-red/15 to-transparent"></div>
@@ -311,8 +311,31 @@ bg-linear-to-r from-black via-[#140000] to-[#000018] overflow-hidden -z-10">
     
 
      <!-- services -->
-    <section>
-
+    <section class="flex flex-col items-center py-20 gap-8">  
+      <span class="flex items-center gap-3 text-xl text-red-600 font-bold"><hr class="bg-red-700 h-0.5 border-0 w-5"> COMMENT ON VOUS SERT</span>
+      <h1 class="font-extrabold text-7xl">Nos <span class="text-red-600">Services</span></h1>
+      <div class="flex gap-13 py-4">
+        <div class="flex flex-col gap-4 p-5 items-center justify-center w-60 shadow rounded-2xl">
+          <div class="flex items-center justify-center py-5 px-4 max-w-max rounded-full bg-blue-800"><i class="text-4xl text-white fa-solid fa-utensils"></i></div>
+          <h3 class="font-bold text-2xl">Sur place</h3>
+          <p class="text-center text-gray-400 text-2xs">Profitez d'une expérience conviviale dans nos restaurants chaleureux</p>
+        </div>
+        <div class="flex flex-col gap-4 p-5 items-center justify-center w-60 shadow rounded-2xl">
+          <div class="flex items-center justify-center py-5 px-4 max-w-max rounded-full bg-red-700"><i class="text-4xl text-white fa-solid fa-bag-shopping"></i></div>
+          <h3 class="font-bold text-2xl">À emporter</h3>
+          <p class="text-center text-gray-400 text-2xs">Commandez et récupérez votre repas en quelques minutes chrono</p>
+        </div>
+        <div class="flex flex-col gap-4 p-5 items-center justify-center w-60 shadow rounded-2xl">
+          <div class="flex items-center justify-center py-5 px-4 max-w-max rounded-full bg-green-700"><img src="Images/delivery.png" alt="delivery" class="w-17"></div>
+          <h3 class="font-bold text-2xl">Livraison</h3>
+          <p class="text-center text-gray-400 text-2xs">On livre directement chez vous dans les meilleurs délais possibles</p>
+        </div>
+        <div class="flex flex-col gap-4 p-5 items-center justify-center w-60 shadow rounded-2xl">
+          <div class="flex items-center justify-center py-5 px-4 max-w-max rounded-full bg-yellow-700"><i class="text-4xl text-white fa-solid fa-car-side"></i></div>
+          <h3 class="font-bold text-2xl">Drive</h3>
+          <p class="text-center text-gray-400 text-2xs">Commandez sans quitter votre voiture, rapide et pratique</p>
+        </div>
+      </div>
     </section>
 
     <!-- avis -->

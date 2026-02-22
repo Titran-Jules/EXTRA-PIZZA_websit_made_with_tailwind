@@ -8,14 +8,15 @@
   --color-brand-blue: #1111d0;
   --color-brand-blue-dark: #0b0ba0;
   --color-dark-bg: #080808;
-
+  
   --font-display: "Bebas Neue", cursive;
   --font-script: "Courgette", cursive;
   --font-body: "Poppins", sans-serif;
 
   --animate-badge-pulse: badgePulse 3s ease-in-out infinite;
   --animate-dot-blink: dot-blink 2s ease-in-out infinite;
-
+  --animate-bg-hero-change: bg-hero-change 30s linear infinite;
+  
   @keyframes badgePulse {
     0%, 100% { border-color: rgba(215, 12, 12, 0.5); }
     50% { border-color: rgba(215, 12, 12, 0.9); }
@@ -23,6 +24,21 @@
   @keyframes dot-blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.3; }
+  }
+
+  @keyframes bg-hero-change {
+    0% {
+      background-image: url('Images/backgroung-image1 - Copie.jpg');
+    }
+    25% {
+      background-image: url('Images/Screenshot_2025-12-02-13-36-22-07_3d9111e2d3171bf4882369f490c087b4.jpg');
+    }
+    50% {
+      background-image: url('Images/resto.jpg');
+    }
+    100% {
+      background-image: url('Images/tour.jpg');
+    }
   }
 }
 
