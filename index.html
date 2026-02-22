@@ -78,80 +78,165 @@
             </div>
 
             <div class="flex flex-wrap gap-5 mt-4">
-                <a href="menu.html" class="bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-full font-bold transition-transform hover:scale-105 hover:[&_i]:translate-x-1 transition-all">Découvrir nos menus <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="menu.html" class="bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-full font-bold transition-all hover:scale-105 hover:[&_i]:translate-x-1 transition-all">Découvrir nos menus <i class="fa-solid fa-arrow-right"></i></a>
                 <a href="rest_form.html" class="border border-white/30 backdrop-blur-sm px-10 py-4 rounded-full font-bold hover:bg-white/10 transition-colors">Réserver une table</a>
             </div>
         </main>
     </section>
 
+    <!-- Actu -->
+    <section id="actualites" class="bg-[#0B0B2A] py-20 px-6 overflow-hidden border-2 border-t-red-600 border-b-blue-600">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex items-center gap-4 mb-12">
+          <hr class="h-1 w-12 border-0 bg-red-600">
+          <h2 class="text-white text-4xl font-bold uppercase tracking-widest">Actualités</h2>
+          <hr class="h-1 w-12 border-0 bg-blue-600">
+        </div>
 
- <!-- À propos -->
-<section class="w-full px-6 py-16 font-poppins items-center justify-center flex flex-col">
-  <div class="flex grid-cols-1 md:grid-cols-2 gap-36 items-center">
     
-    <div class="relative w-[30vw] h-[80vh]">
-      <img src="Images/Batiment_en_verre.jpg"
-           alt="Extra Pizza"
-           class="rounded-3xl shadow-[0px_10px_7px] w-full object-cover h-[80vh]">
- 
-      <div class="bg-red-600 text-white rounded-3xl text-center translate-x-1/2 -translate-y-3/2 w-[10vw] flex-col flex h-[15vh] justify-center items-center absolute right-4 shadow-[0px_5px_12px]">
-        <h2 class="text-5xl font-extrabold leading-none">20+</h2>
-        <p class="mt-3 text-sm tracking-wide">ans d'expérience</p>
-      </div>
-    </div>
+      <div class="relative">
 
-    <div class="flex flex-col w-[50vw]">
-   
-      <p class="text-red-600 uppercase tracking-widest font-semibold text-sm flex items-center gap-2">
-        <span class="w-10 h-0.5 bg-red-600 inline-block"></span>
-         Qui sommes-nous
-      </p>
+        
+        <div id="actu-slider" class="relative min-h-100">
 
-      <h1 class="text-5xl font-extrabold mt-4 leading-tight">
-        Bienvenue chez
-        <span class="text-red-600 block mt-2">Extra Pizza</span>
-      </h1>
-
-      <p class="mt-6 text-gray-600 leading-relaxed text-[1.35rem] w-[40vw]">
-        Extra Pizza est une chaîne de restauration rapide spécialisée dans les 
-        <span class="font-semibold text-gray-800">pizzas</span>, les 
-        <span class="font-semibold text-gray-800">fast-foods</span>, les 
-        <span class="font-semibold text-gray-800">french tacos</span> 
-        et les <span class="font-semibold text-gray-800">boissons</span>.
-        Fondée en 2005, Extra Pizza s'est rapidement imposée comme l'une des principales 
-        destinations pour les amateurs de cuisine rapide et savoureuse à 
-        <span class="font-semibold text-gray-800">Madagascar</span>.
-      </p>
-
-      <div class="flex items-center gap-3 mt-8">
-        <div class="mt-4 w-24 h-1 rounded-full bg-gradient-to-r from-red-600 to-blue-600"></div>
-      </div>
-
-      <div class="mt-10">
-        <h3 class="flex items-center gap-2 text-lg font-bold">
-          <span class="text-red-600 text-xl">⏰</span>
-          Horaires d'ouverture
-        </h3>
-
-        <div class="flex flex-col sm:flex-row gap-6 mt-6">
-          <div class="bg-white rounded-2xl px-8 py-6 shadow-md border-l-4 border-red-600">
-            <p class="text-gray-500">Lun – Ven</p>
-            <p class="font-bold text-lg mt-2">10h00 – 22h00</p>
+        
+          <div class="actu-slide flex flex-col md:flex-row items-center gap-10 opacity-0 absolute inset-0 transition-opacity duration-700">
+            <div class="md:w-1/2 w-full overflow-hidden rounded-2xl shadow-2xl shrink-0">
+              <img src="Images/actu-pizza.png" alt="Extra Pizza" class="w-full h-80 object-cover hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="md:w-1/2 w-full flex flex-col gap-5">
+              <span class="text-red-500 uppercase text-sm font-semibold tracking-widest">Nouveauté</span>
+              <h3 class="text-white text-3xl font-bold leading-tight">Extra Pizza — Créateur de la Pizza Feuilletée</h3>
+              <p class="text-gray-400 text-lg leading-relaxed">Découvrez notre nouvelle pizza feuilletée croustillante à souhait. Une expérience gustative unique qui redéfinit la pizza à Madagascar !</p>
+              <a href="#" class="self-start bg-red-600 hover:bg-red-700 text-white font-semibold px-7 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-red-600/40">En savoir plus <i class="fa-solid fa-arrow-right ml-2"></i>
+              </a>
+            </div>
           </div>
 
-          <div class="bg-white rounded-2xl px-8 py-6 shadow-md border-l-4 border-red-600">
-            <p class="text-gray-500">Sam – Dim</p>
-            <p class="font-bold text-lg mt-2">11h00 – 23h00</p>
+          
+          <div class="actu-slide flex flex-col md:flex-row items-center gap-10 opacity-0 absolute inset-0 transition-opacity duration-700">
+            <div class="md:w-1/2 w-full overflow-hidden rounded-2xl shadow-2xl shrink-0">
+              <img src="Images/actu-kids.png" alt="Extra Kids" class="w-full h-80 object-cover hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="md:w-1/2 w-full flex flex-col gap-5">
+              <span class="text-blue-400 uppercase text-sm font-semibold tracking-widest">Bientôt disponible</span>
+              <h3 class="text-white text-3xl font-bold leading-tight">Extra Kids — Menu Enfant à 13 000 Ar</h3>
+              <p class="text-gray-400 text-lg leading-relaxed">Un menu spécialement conçu pour les enfants avec des jouets surprises ! Tacos, snacks et boissons fraîches pour les petits gourmands.</p>
+              <a href="#" class="self-start bg-blue-600 hover:bg-blue-700 text-white font-semibold px-7 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-blue-600/40">
+                Découvrir <i class="fa-solid fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+
+          
+          <div class="actu-slide flex flex-col md:flex-row items-center gap-10 opacity-0 absolute inset-0 transition-opacity duration-700">
+            <div class="md:w-1/2 w-full overflow-hidden rounded-2xl shadow-2xl shrink-0">
+              <img src="Images/actu-tea.png" alt="Nouvelle Boisson" class="w-full h-80 object-cover hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="md:w-1/2 w-full flex flex-col gap-5">
+              <span class="text-yellow-400 uppercase text-sm font-semibold tracking-widest">Nouveau</span>
+              <h3 class="text-white text-3xl font-bold leading-tight">Red Velvet Bubble Tea — 10 000 Ar</h3>
+              <p class="text-gray-400 text-lg leading-relaxed">Notre nouvelle boisson vedette est arrivée ! Un Red Velvet Bubble Tea onctueux et gourmand pour accompagner vos repas.</p>
+              <a href="#" class="self-start bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-7 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-yellow-500/40">Commander <i class="fa-solid fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        
+        <div class="flex items-center justify-between mt-10">
+
+          
+          <div id="actu-dots" class="flex gap-3">
+            <button class="actu-dot w-8 h-2 rounded-full bg-red-600 transition-all duration-300" data-index="0"></button>
+            <button class="actu-dot w-3 h-2 rounded-full bg-white/30 hover:bg-white/60 transition-all duration-300" data-index="1"></button>
+            <button class="actu-dot w-3 h-2 rounded-full bg-white/30 hover:bg-white/60 transition-all duration-300" data-index="2"></button>
+          </div>
+
+          
+          <div class="flex gap-3">
+            <button id="actu-prev" class="w-11 h-11 rounded-full border border-white/20 text-white hover:bg-white/10 transition-all duration-300 flex items-center justify-center">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="actu-next" class="w-11 h-11 rounded-full bg-red-600 hover:bg-red-700 text-white transition-all duration-300 flex items-center justify-center">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- À propos -->
+    <section class="w-full px-6 py-16 font-poppins items-center justify-center flex flex-col">
+      <div class="flex grid-cols-1 md:grid-cols-2 gap-36 items-center">
+        
+        <div class="relative w-[30vw] h-[80vh]">
+          <img src="Images/Batiment_en_verre.jpg"
+               alt="Extra Pizza"
+               class="rounded-3xl shadow-[0px_10px_7px] w-full object-cover h-[80vh]">
+     
+          <div class="bg-red-600 text-white rounded-3xl text-center translate-x-1/2 -translate-y-3/2 w-[10vw] flex-col flex h-[15vh] justify-center items-center absolute right-4 shadow-[0px_5px_12px]">
+            <h2 class="text-5xl font-extrabold leading-none">20+</h2>
+            <p class="mt-3 text-sm tracking-wide">ans d'expérience</p>
           </div>
         </div>
+    
+        <div class="flex flex-col w-[50vw]">
+       
+          <p class="text-red-600 uppercase tracking-widest font-semibold text-sm flex items-center gap-2">
+            <span class="w-10 h-0.5 bg-red-600 inline-block"></span>
+             Qui sommes-nous
+          </p>
+    
+          <h1 class="text-5xl font-extrabold mt-4 leading-tight">
+            Bienvenue chez
+            <span class="text-red-600 block mt-2">Extra Pizza</span>
+          </h1>
+    
+          <p class="mt-6 text-gray-600 leading-relaxed text-[1.35rem] w-[40vw]">
+            Extra Pizza est une chaîne de restauration rapide spécialisée dans les 
+            <span class="font-semibold text-gray-800">pizzas</span>, les 
+            <span class="font-semibold text-gray-800">fast-foods</span>, les 
+            <span class="font-semibold text-gray-800">french tacos</span> 
+            et les <span class="font-semibold text-gray-800">boissons</span>.
+            Fondée en 2005, Extra Pizza s'est rapidement imposée comme l'une des principales 
+            destinations pour les amateurs de cuisine rapide et savoureuse à 
+            <span class="font-semibold text-gray-800">Madagascar</span>.
+          </p>
+    
+          <div class="flex items-center gap-3 mt-8">
+            <div class="mt-4 w-24 h-1 rounded-full bg-gradient-to-r from-red-600 to-blue-600"></div>
+          </div>
+    
+          <div class="mt-10">
+            <h3 class="flex items-center gap-2 text-lg font-bold">
+              <span class="text-red-600 text-xl">⏰</span>
+              Horaires d'ouverture
+            </h3>
+    
+            <div class="flex flex-col sm:flex-row gap-6 mt-6">
+              <div class="bg-white rounded-2xl px-8 py-6 shadow-md border-l-4 border-red-600">
+                <p class="text-gray-500">Lun – Ven</p>
+                <p class="font-bold text-lg mt-2">10h00 – 22h00</p>
+              </div>
+    
+              <div class="bg-white rounded-2xl px-8 py-6 shadow-md border-l-4 border-red-600">
+                <p class="text-gray-500">Sam – Dim</p>
+                <p class="font-bold text-lg mt-2">11h00 – 23h00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
       </div>
-    </div>
+    </section>
 
-  </div>
-</section>
-    <!-- stat (chiffres) -->
-      <section class="relative w-full py-28 
-bg-linear-to-r from-black via-[#140000] to-[#000018] overflow-hidden -z-10">
+ <!-- stat (chiffres) -->
+ <section class="relative w-full py-28 bg-[#0B0B2A] overflow-hidden -z-10 border-2 border-t-red-600 border-b-blue-600">
 
   <div class="max-w-6xl mx-auto flex 
               text-center items-center justify-center gap-12 px-6">
@@ -216,37 +301,45 @@ bg-linear-to-r from-black via-[#140000] to-[#000018] overflow-hidden -z-10">
     <!--  nos locaux -->
     <div class="text-center mb-12 mt-20 px-4">
       <div class="flex items-center justify-center gap-3 mb-4">
-        <span class="block h-[2px] w-10 bg-red-600"></span> 
+        <span class="block h-0.5 w-10 bg-red-600"></span> 
         <h2 class="text-red-600 font-bold text-sm tracking-[0.2em] uppercase">Nous trouver</h2>
       </div>
       <h1 class="text-5xl md:text-5xl font-black text-[#1a1a1a] arial tracking-tight">Nos <span class="text-blue-700">Restaurants</span></h1>
   </div>
     <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-10 bg-gray-50 font-sans">
-      <div class="flex flex-col overflow-hidden rounded-[2.5rem] bg-[#121212] shadow-xl transition-transform duration-300 hover:scale-[1.02]">
+      <div class="flex flex-col overflow-hidden rounded-[2.5rem] bg-[#0B0B2A] shadow-xl transition-transform duration-300 hover:scale-[1.02] hover:[&>div>img]:brightness-50 hover:[&>div:nth-child(4)]:flex transition-all">
         <div class="h-48 w-full">
-        <img src="Images/lieu-extra-pizza/Ambohimangakely.jpg" alt="Ambohimangakely" class="h-full w-full object-cover">
+          <img src="Images/lieu-extra-pizza/Ambohimangakely.jpg" alt="Ambohimangakely" class="h-full w-full object-cover">
+        </div>
+        <div class="h-0.75 w-full bg-red-600"></div>
+        <div class="p-6">
+          <h3 class="text-white text-xl font-bold mb-2">Ambohimangakely</h3>
+          <p class="text-gray-400 text-sm flex items-start gap-2 leading-relaxed">
+          <i class="fa-solid fa-location-dot text-red-600 mt-1"></i>3HRR+5W3, By Pass, Antananarivo</p>
+        </div>
+        <div class="items-center gap-2 font-bold py-2 px-3 bg-white rounded-4xl w-max absolute bottom-44 left-28 hover:bg-red-600 hover:[&_i]:text-white hover:[&_p]:text-white transition-all hidden">
+          <i class="text-[1.2rem] fa-regular fa-map text-5xl text-red-600"></i>
+          <p class="text-black">Itinéraire</p>
+        </div>
       </div>
-      <div class="h-[3px] w-full bg-red-600"></div>
-      <div class="p-6">
-        <h3 class="text-white text-xl font-bold mb-2">Ambohimangakely</h3>
-        <p class="text-gray-400 text-sm flex items-start gap-2 leading-relaxed">
-        <i class="fa-solid fa-location-dot text-red-600 mt-1"></i>3HRR+5W3, By Pass, Antananarivo</p>
-    </div>
-  </div>
 
-  <div class="flex flex-col overflow-hidden rounded-[2.5rem] bg-[#121212] shadow-xl transition-transform duration-300 hover:scale-[1.02]">
+  <div class="flex flex-col overflow-hidden rounded-[2.5rem] bg-[#0B0B2A] shadow-xl transition-transform duration-300 hover:scale-[1.02] hover:[&>div>img]:brightness-50 hover:[&>div:nth-child(4)]:flex transition-all">
     <div class="h-48 w-full">
       <img src="Images/lieu-extra-pizza/Iaviloha.jpg" alt="Iavoloha" class="h-full w-full object-cover">
     </div>
     <div class="h-[3px] w-full bg-red-600"></div>
-      <div class="p-6">
-        <h3 class="text-white text-xl font-bold mb-2">Iavoloha</h3>
-        <p class="text-gray-400 text-sm flex items-start gap-2 leading-relaxed">
-        <i class="fa-solid fa-location-dot text-red-600 mt-1"></i>2G4Q+52V, Antananarivo</p>
-      </div>
+    <div class="p-6">
+      <h3 class="text-white text-xl font-bold mb-2">Iavoloha</h3>
+      <p class="text-gray-400 text-sm flex items-start gap-2 leading-relaxed">
+      <i class="fa-solid fa-location-dot text-red-600 mt-1"></i>2G4Q+52V, Antananarivo</p>
     </div>
+    <div class="items-center gap-2 font-bold py-2 px-3 bg-white rounded-4xl w-max absolute bottom-44 left-28 hover:bg-red-600 hover:[&_i]:text-white hover:[&_p]:text-white transition-all hidden">
+      <i class="text-[1.2rem] fa-regular fa-map text-5xl text-red-600"></i>
+      <p class="text-black">Itinéraire</p>
+    </div>
+  </div>
 
-    <div class="flex flex-col overflow-hidden rounded-[2.5rem] bg-[#121212] shadow-xl transition-transform duration-300 hover:scale-[1.02]">
+    <div class="flex flex-col overflow-hidden rounded-[2.5rem] bg-[#0B0B2A] shadow-xl transition-transform duration-300 hover:scale-[1.02] hover:[&>div>img]:brightness-50 hover:[&>div:nth-child(4)]:flex transition-all">
       <div class="h-48 w-full">
         <img src="Images/lieu-extra-pizza/Antanimena1.jpg" alt="Antanimena" class="h-full w-full object-cover">
       </div>
@@ -256,9 +349,13 @@ bg-linear-to-r from-black via-[#140000] to-[#000018] overflow-hidden -z-10">
         <p class="text-gray-400 text-sm flex items-start gap-2 leading-relaxed">
         <i class="fa-solid fa-location-dot text-red-600 mt-1"></i>4G2C+M8J, Rue Ny Zafindriandiky</p>
       </div>
+      <div class="items-center gap-2 font-bold py-2 px-3 bg-white rounded-4xl w-max absolute bottom-44 left-28 hover:bg-red-600 hover:[&_i]:text-white hover:[&_p]:text-white transition-all hidden">
+        <i class="text-[1.2rem] fa-regular fa-map text-5xl text-red-600"></i>
+        <p class="text-black">Itinéraire</p>
+      </div>
     </div>
 
-    <div class="flex flex-col overflow-hidden rounded-[2.5rem] bg-[#121212] shadow-xl transition-transform duration-300 hover:scale-[1.02]">
+    <div class="flex flex-col overflow-hidden rounded-[2.5rem] bg-[#0B0B2A] shadow-xl transition-transform duration-300 hover:scale-[1.02] hover:[&>div>img]:brightness-50 hover:[&>div:nth-child(4)]:flex transition-all">
       <div class="h-48 w-full">
         <img src="Images/lieu-extra-pizza/Manakambahiny.jpg" alt="Manakambahiny" class="h-full w-full object-cover">
       </div>
@@ -268,9 +365,13 @@ bg-linear-to-r from-black via-[#140000] to-[#000018] overflow-hidden -z-10">
         <p class="text-gray-400 text-sm flex items-start gap-2 leading-relaxed">
         <i class="fa-solid fa-location-dot text-red-600 mt-1"></i>Lot VO 22 D, Antananarivo</p>
       </div>
+      <div class="items-center gap-2 font-bold py-2 px-3 bg-white rounded-4xl w-max absolute bottom-44 left-28 hover:bg-red-600 hover:[&_i]:text-white hover:[&_p]:text-white transition-all hidden">
+        <i class="text-[1.2rem] fa-regular fa-map text-5xl text-red-600"></i>
+        <p class="text-black">Itinéraire</p>
+      </div>
     </div>
 
-    <div class="flex flex-col overflow-hidden rounded-[2.5rem] bg-[#121212] shadow-xl transition-transform duration-300 hover:scale-[1.02]">
+    <div class="flex flex-col overflow-hidden rounded-[2.5rem] bg-[#0B0B2A] shadow-xl transition-transform duration-300 hover:scale-[1.02] hover:[&>div>img]:brightness-50 hover:[&>div:nth-child(4)]:flex transition-all">
       <div class="h-48 w-full">
         <img src="Images/lieu-extra-pizza/Antanimora.jpg" alt="Antanimora" class="h-full w-full object-cover">
       </div>
@@ -280,9 +381,13 @@ bg-linear-to-r from-black via-[#140000] to-[#000018] overflow-hidden -z-10">
         <p class="text-gray-400 text-sm flex items-start gap-2 leading-relaxed">
         <i class="fa-solid fa-location-dot text-red-600 mt-1"></i>101 Lalana Vvs, Antananarivo</p>
       </div>
+      <div class="items-center gap-2 font-bold py-2 px-3 bg-white rounded-4xl w-max absolute bottom-44 left-28 hover:bg-red-600 hover:[&_i]:text-white hover:[&_p]:text-white transition-all hidden">
+        <i class="text-[1.2rem] fa-regular fa-map text-5xl text-red-600"></i>
+        <p class="text-black">Itinéraire</p>
+      </div>
     </div>
 
-    <div class="flex flex-col overflow-hidden rounded-[2.5rem] bg-[#121212] shadow-xl transition-transform duration-300 hover:scale-[1.02]">
+    <div class="flex flex-col overflow-hidden rounded-[2.5rem] bg-[#0B0B2A] shadow-xl transition-transform duration-300 hover:scale-[1.02] hover:[&>div>img]:brightness-50 hover:[&>div:nth-child(4)]:flex transition-all">
       <div class="h-48 w-full">
         <img src="Images/lieu-extra-pizza/Tamatave.jpg" alt="Tamatave" class="h-full w-full object-cover">
       </div>
@@ -292,9 +397,13 @@ bg-linear-to-r from-black via-[#140000] to-[#000018] overflow-hidden -z-10">
         <p class="text-gray-400 text-sm flex items-start gap-2 leading-relaxed">
         <i class="fa-solid fa-location-dot text-red-600 mt-1"></i>Blvd Ratsimilaho, Toamasina 501</p>
       </div>
+      <div class="items-center gap-2 font-bold py-2 px-3 bg-white rounded-4xl w-max absolute bottom-44 left-28 hover:bg-red-600 hover:[&_i]:text-white hover:[&_p]:text-white transition-all hidden">
+        <i class="text-[1.2rem] fa-regular fa-map text-5xl text-red-600"></i>
+        <p class="text-black">Itinéraire</p>
+      </div>
     </div>
 
-    <div class="flex flex-col overflow-hidden rounded-[2.5rem] bg-[#121212] shadow-xl transition-transform duration-300 hover:scale-[1.02]">
+    <div class="flex flex-col overflow-hidden rounded-[2.5rem] bg-[#0B0B2A] shadow-xl transition-transform duration-300 hover:scale-[1.02] hover:[&>div>img]:brightness-50 hover:[&>div:nth-child(4)]:flex transition-all">
       <div class="h-48 w-full">
         <img src="Images/lieu-extra-pizza/by-pass.jpeg" alt="By-Pass" class="h-full w-full object-cover">
       </div>
@@ -304,9 +413,13 @@ bg-linear-to-r from-black via-[#140000] to-[#000018] overflow-hidden -z-10">
         <p class="text-gray-400 text-sm flex items-start gap-2 leading-relaxed">
         <i class="fa-solid fa-location-dot text-red-600 mt-1"></i>3H57+VCV, Antananarivo</p>
       </div>
+      <div class="items-center gap-2 font-bold py-2 px-3 bg-white rounded-4xl w-max absolute bottom-44 left-28 hover:bg-red-600 hover:[&_i]:text-white hover:[&_p]:text-white transition-all hidden">
+        <i class="text-[1.2rem] fa-regular fa-map text-5xl text-red-600"></i>
+        <p class="text-black">Itinéraire</p>
+      </div>
     </div>
 
-    <div class="flex flex-col overflow-hidden rounded-[2.5rem] bg-[#121212] shadow-xl transition-transform duration-300 hover:scale-[1.02]">
+    <div class="flex flex-col overflow-hidden rounded-[2.5rem] bg-[#0B0B2A] shadow-xl transition-transform duration-300 hover:scale-[1.02] hover:[&>div>img]:brightness-50 hover:[&>div:nth-child(4)]:flex transition-all">
       <div class="h-48 w-full">
         <img src="Images/lieu-extra-pizza/Immeuble-corona.jpeg" alt="Immeuble Corona" class="h-full w-full object-cover">
       </div>
@@ -316,9 +429,13 @@ bg-linear-to-r from-black via-[#140000] to-[#000018] overflow-hidden -z-10">
         <p class="text-gray-400 text-sm flex items-start gap-2 leading-relaxed">
         <i class="fa-solid fa-location-dot text-red-600 mt-1"></i>4FXH+P4X, Corona Plaza 2e ét., Antananarivo</p>
       </div>
+      <div class="items-center gap-2 font-bold py-2 px-3 bg-white rounded-4xl w-max absolute bottom-44 left-28 hover:bg-red-600 hover:[&_i]:text-white hover:[&_p]:text-white transition-all hidden">
+        <i class="text-[1.2rem] fa-regular fa-map text-5xl text-red-600"></i>
+        <p class="text-black">Itinéraire</p>
+      </div>
     </div>
 
-    <div class="flex flex-col items-center justify-center p-8 rounded-[2.5rem] bg-blue-700 text-white text-center shadow-xl transition-all hover:bg-blue-800">
+    <div class="flex flex-col items-center justify-center p-8 rounded-[2.5rem] bg-blue-700 text-white text-center shadow-xl transition-all hover:bg-blue-800 relative left-[160%]">
       <div class="bg-white/20 p-4 rounded-full mb-4">
         <i class="fa-regular fa-map text-5xl text-white"></i>
       </div>
@@ -329,7 +446,7 @@ bg-linear-to-r from-black via-[#140000] to-[#000018] overflow-hidden -z-10">
   </section>
 
     <!-- carte menu -->
-<section class="min-h-screen bg-gradient-to-r from-black via-[#140000] to-[#000018] flex items-center justify-center px-6 py-20">
+<section class="min-h-screen bg-[#0B0B2A] flex items-center justify-center px-6 py-12 border-2 border-t-red-600 border-b-blue-600">
   
   <div class="text-center w-full max-w-6xl">
     
@@ -454,7 +571,7 @@ bg-linear-to-r from-black via-[#140000] to-[#000018] overflow-hidden -z-10">
     </section>
 
     <!-- footer -->
-    <footer class="flex flex-col gap-8 bg-indigo-950 py-12 border-t-red-600 border-3">
+    <footer class="flex flex-col gap-8 bg-[#0B0B2A] py-12 border-t-red-600 border-3">
         <div class="flex gap-36 justify-center">
           <div class="flex flex-col gap-4 w-56 items-center">
             <div class="flex items-center gap-5">
@@ -531,5 +648,7 @@ bg-linear-to-r from-black via-[#140000] to-[#000018] overflow-hidden -z-10">
           <p class="text-gray-500 px-8">© 2025 Extra Pizza Madagascar. Tous droits réservés.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
