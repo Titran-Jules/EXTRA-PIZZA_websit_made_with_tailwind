@@ -17,11 +17,11 @@
         <nav>
             <ul class="flex gap-2 items-center">
                 <li class="text-xl text-gray-100 flex flex-col items-center px-5 py-1 bg-blue-950 rounded-4xl hover:text-white">Accueil <hr class="w-1 h-1 border-0 rounded-4xl bg-red-600"></li>
-                <li class="text-xl text-gray-200 flex flex-col items-center px-5 py-1 hover:bg-blue-950 hover:text-white rounded-4xl">À propos <hr class="w-1 h-1 border-0 rounded-4xl bg-red-600"></li>
-                <li class="text-xl text-gray-200 flex flex-col items-center px-5 py-1 hover:bg-blue-950 hover:text-white rounded-4xl">Nos locaux <hr class="w-1 h-1 border-0 rounded-4xl bg-red-600"></li>
-                <li class="text-xl text-gray-200 flex flex-col items-center px-5 py-1 hover:bg-blue-950 hover:text-white rounded-4xl">Menus <hr class="w-1 h-1 border-0 rounded-4xl bg-red-600"></li>
-                <li class="text-xl text-gray-200 flex flex-col items-center px-5 py-1 hover:bg-blue-950 hover:text-white rounded-4xl">Avis <hr class="w-1 h-1 border-0 rounded-4xl bg-red-600"></li>
-                <li class="text-xl text-gray-200 flex flex-col items-center px-5 py-1 hover:bg-blue-950 hover:text-white rounded-4xl">Contact <hr class="w-1 h-1 border-0 rounded-4xl bg-red-600"></li>
+                <li class="text-xl text-gray-200 flex flex-col items-center px-5 py-1 hover:bg-blue-950 hover:text-white rounded-4xl hover:[&_hr]:bg-red-600 transition-all">À propos <hr class="w-1 h-1 border-0 rounded-4xl "></li>
+                <li class="text-xl text-gray-200 flex flex-col items-center px-5 py-1 hover:bg-blue-950 hover:text-white rounded-4xl hover:[&_hr]:bg-red-600 transition-all">Nos locaux <hr class="w-1 h-1 border-0 rounded-4x"></li>
+                <li class="text-xl text-gray-200 flex flex-col items-center px-5 py-1 hover:bg-blue-950 hover:text-white rounded-4xl hover:[&_hr]:bg-red-600 transition-all">Menus <hr class="w-1 h-1 border-0 rounded-4xl"></li>
+                <li class="text-xl text-gray-200 flex flex-col items-center px-5 py-1 hover:bg-blue-950 hover:text-white rounded-4xl hover:[&_hr]:bg-red-600 transition-all">Avis <hr class="w-1 h-1 border-0 rounded-4xl"></li>
+                <li class="text-xl text-gray-200 flex flex-col items-center px-5 py-1 hover:bg-blue-950 hover:text-white rounded-4xl hover:[&_hr]:bg-red-600 transition-all">Contact <hr class="w-1 h-1 border-0 rounded-4xl"></li>
             </ul>
         </nav>
         <div class="flex gap-5 *:text-xl *:px-5 *:py-2 *:rounded-4xl">
@@ -46,7 +46,7 @@
                 <span class="text-red-600">PIZZA</span>
             </h1>
 
-            <hr class="h-1.5 w-32 border-0 bg-linear-to-r from-red-600 to-blue-600">
+            <hr class="h-1.5 w-32 border-0 bg-linear-to-r from-red-600 to-blue-600 rounded-4xl">
         
             <p class="font-script text-[clamp(1.1rem,2vw,1.4rem)] text-white/80 max-w-2xl">Leader du french tacos & créateur de la pizza feuilletée</p>
         
@@ -78,7 +78,7 @@
             </div>
 
             <div class="flex flex-wrap gap-5 mt-4">
-                <a href="menu.html" class="bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-full font-bold transition-transform hover:scale-105">Découvrir nos menus</a>
+                <a href="menu.html" class="bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-full font-bold transition-transform hover:scale-105 hover:[&_i]:translate-x-1 transition-all">Découvrir nos menus <i class="fa-solid fa-arrow-right"></i></a>
                 <a href="rest_form.html" class="border border-white/30 backdrop-blur-sm px-10 py-4 rounded-full font-bold hover:bg-white/10 transition-colors">Réserver une table</a>
             </div>
         </main>
@@ -87,20 +87,20 @@
 
  <!-- À propos -->
 <section class="w-full px-6 py-16 font-poppins items-center justify-center flex flex-col">
-  <div class="flex grid-cols-1 md:grid-cols-2 gap-12 items-start">
+  <div class="flex grid-cols-1 md:grid-cols-2 gap-36 items-center">
     
-    <div class="relative w-[60vw] h-[80vh]">
+    <div class="relative w-[30vw] h-[80vh]">
       <img src="Images/Batiment_en_verre.jpg"
            alt="Extra Pizza"
-           class="rounded-3xl shadow-[0px_10px_7px] w-full object-cover h-[50vh]">
+           class="rounded-3xl shadow-[0px_10px_7px] w-full object-cover h-[80vh]">
  
-      <div class="bg-red-600 text-white rounded-3xl text-center translate-x-1/2 -translate-y-3/2 w-[5vw] flex-col flex h-[15vh] justify-center items-center absolute right-4 shadow-[0px_5px_12px]">
+      <div class="bg-red-600 text-white rounded-3xl text-center translate-x-1/2 -translate-y-3/2 w-[10vw] flex-col flex h-[15vh] justify-center items-center absolute right-4 shadow-[0px_5px_12px]">
         <h2 class="text-5xl font-extrabold leading-none">20+</h2>
         <p class="mt-3 text-sm tracking-wide">ans d'expérience</p>
       </div>
     </div>
 
-    <div class="flex flex-col">
+    <div class="flex flex-col w-[50vw]">
    
       <p class="text-red-600 uppercase tracking-widest font-semibold text-sm flex items-center gap-2">
         <span class="w-10 h-0.5 bg-red-600 inline-block"></span>
@@ -112,7 +112,7 @@
         <span class="text-red-600 block mt-2">Extra Pizza</span>
       </h1>
 
-      <p class="mt-6 text-gray-600 leading-relaxed text-lg">
+      <p class="mt-6 text-gray-600 leading-relaxed text-[1.35rem] w-[40vw]">
         Extra Pizza est une chaîne de restauration rapide spécialisée dans les 
         <span class="font-semibold text-gray-800">pizzas</span>, les 
         <span class="font-semibold text-gray-800">fast-foods</span>, les 
@@ -454,8 +454,82 @@ bg-linear-to-r from-black via-[#140000] to-[#000018] overflow-hidden -z-10">
     </section>
 
     <!-- footer -->
-    <footer>
+    <footer class="flex flex-col gap-8 bg-indigo-950 py-12 border-t-red-600 border-3">
+        <div class="flex gap-36 justify-center">
+          <div class="flex flex-col gap-4 w-56 items-center">
+            <div class="flex items-center gap-5">
+              <hr class="h-1 w-12 border-0 bg-red-600">
+              <img src="Images/Logo.png" alt="logo_extra_pizza" class="w-16 rounded-full"> 
+              <hr class="h-1 w-12 border-0 bg-blue-600">
+            </div>
+            <p class="text-gray-400 text-[1.2rem] text-center">Leader du French Tacos à Madagascar et créateur de la pizza feuilletée.</p>
+            <div class="flex gap-4">
+              <div class="flex items-center justify-center px-3 py-3.5 text-white rounded-full bg-blue-600 w-max hover:-translate-y-0.5 transition-all"><i class="fa-brands fa-facebook-f"></i></div>
+              <div class="flex items-center justify-center px-3 py-3.5 text-white rounded-full bg-linear-[45deg,#f9ce34,#ee2a7b,#6228d7] w-max hover:-translate-y-0.5 transition-all"><i class="fa-brands fa-instagram"></i></div>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <h3 class="text-[1.3rem] text-white font-bold">Nos Menus</h3>
+            <hr class="border-0 bg-red-600 w-9 h-0.5">
+            <div class="[&_a]:text-gray-400 flex flex-col gap-4 [&_a]:hover:translate-x-1 [&_a]:hover:text-white [&_a]:transition-all">
+              <a href="">Nos Pizzas</a>
+              <a href="">Nos Tacos</a>
+              <a href="">Nos Boissons</a>
+              <a href="">Nos Fast-Food</a>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <h3 class="text-[1.3rem] text-white font-bold">Liens rapides</h3>
+            <hr class="border-0 bg-red-600 w-9 h-0.5">
+            <div class="[&_a]:text-gray-400 flex flex-col gap-4 [&_a]:hover:translate-x-1 [&_a]:hover:text-white [&_a]:transition-all">
+              <a href="">Accueil</a>
+              <a href="">À propos</a>
+              <a href="">Nos locaux</a>
+              <a href="">Avis clients</a>
+              <a href="">Réserver une table</a>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <h3 class="text-[1.3rem] text-white font-bold">Liens rapides</h3>
+            <hr class="border-0 bg-red-600 w-9 h-0.5">
+            <div class="[&>div_p]:text-gray-400 flex flex-col gap-4 [&>div_p]:hover:translate-x-1 [&>div_p]:hover:text-white [&>div_p]:transition-all [&>div_i]:text-red-600 [&>div]:flex [&>div]:gap-1 [&>div]:items-center">
+              <div>
+                <i class="fa-solid fa-phone"></i>
+                <p>+261 34 12 345 67</p>
+              </div>
+              <div>
+                <i class="fa-brands fa-facebook"></i>
+                <p>Extra pizza</p>
+              </div>
+              <div>
+                <i class="fa-brands fa-instagram"></i>
+                <p>extra_pizza_madagascar</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-3 w-56">
+            <h3 class="text-[1.3rem] text-white font-bold">Notre cuisine</h3>
+            <hr class="border-0 bg-red-600 w-9 h-0.5">
+            <div class="[&_a]:text-gray-400 flex flex-wrap gap-4 [&_img]:hover:scale-105 [&_img]:hover:text-white [&_img]:transition-all [&_img]:w-15 [&_img]:h-15 [&_img]:rounded-xl">
+              <img src="Images/Pizza-pictures/burger.jpg" alt="burger_de_extra-pizza">
+              <img src="Images/Pizza-pictures/menuSpécial.jpg" alt="menu_spécial">
+              <img src="Images/Pizza-pictures/pizza_feuilletée.jpg" alt="pizza feuilletée">
+              <img src="Images/Pizza-pictures/rolls.jpg" alt="rolls">
+              <img src="Images/Pizza-pictures/milk.jpg" alt="milk">
+              <img src="Images/Pizza-pictures/misao.jpg" alt="misao">
+            </div>
+          </div>
+        </div>
         
+        <hr class="border-0 bg-gray-700 h-0.5">
+
+        <div>
+          <p class="text-gray-500 px-8">© 2025 Extra Pizza Madagascar. Tous droits réservés.</p>
+        </div>
     </footer>
 </body>
 </html>
