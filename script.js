@@ -1,3 +1,50 @@
+(function initHeroBgSlider() {
+  const layers  = document.querySelectorAll('.hero-bg-layer');
+  const dots    = document.querySelectorAll('.hero-bg-dot');
+  const btnPrev = document.getElementById('hero-bg-prev');
+  const btnNext = document.getElementById('hero-bg-next');
+  const section = document.getElementById('heroSection');
+
+  if (!layers.length || !btnPrev || !btnNext) return;
+
+  const AUTOPLAY_DELAY = 6000;
+  let   current        = 0;
+  let   autoplayTimer;
+
+  function goTo(targetIndex) {
+    layers[current].style.opacity = '0';
+    dots[current].classList.remove('bg-red-600', 'w-8');
+    dots[current].classList.add('bg-white/30', 'w-3');
+
+    current = (targetIndex + layers.length) % layers.length;
+
+    layers[current].style.opacity = '1';
+    dots[current].classList.remove('bg-white/30', 'w-3');
+    dots[current].classList.add('bg-red-600', 'w-8');
+
+    resetAutoplay();
+  }
+
+  function resetAutoplay() {
+    clearInterval(autoplayTimer);
+    autoplayTimer = setInterval(() => goTo(current + 1), AUTOPLAY_DELAY);
+  }
+
+  layers.forEach(layer => {
+    const src = layer.style.backgroundImage.replace(/url\(['"]?|['"]?\)/g, '');
+    if (src) { const preload = new Image(); preload.src = src; }
+  });
+
+  btnNext.addEventListener('click', () => goTo(current + 1));
+  btnPrev.addEventListener('click', () => goTo(current - 1));
+  dots.forEach(dot => dot.addEventListener('click', () => goTo(+dot.dataset.index)));
+
+  section.addEventListener('mouseenter', () => clearInterval(autoplayTimer));
+  section.addEventListener('mouseleave', resetAutoplay);
+
+  resetAutoplay();
+})();
+
 const menuToggle = document.getElementById('menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
 
@@ -72,13 +119,14 @@ menuToggle.addEventListener('click', () => {
 })();
 
 (function initHeroParallax() {
-    const hero = document.getElementById('heroSection');
-    if (!hero) return;
+    const layers = document.querySelectorAll('.hero-bg-layer');
+    if (!layers) return;
 
     window.addEventListener('scroll', () => {
         const scrolled = window.scrollY;
         if (scrolled < window.innerHeight * 1.2) {
-            hero.style.backgroundPositionY = `calc(50% + ${scrolled * 0.25}px)`;
+            const posY = `calc(50% + ${scrolled * 0.25}px)`;
+            layers.forEach(layer => { layer.style.backgroundPositionY = posY; });
         }
     }, { passive: true });
 })();
